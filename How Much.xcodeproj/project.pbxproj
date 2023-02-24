@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E463E5F029A8A0CE003F30C8 /* How-Much-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "How-Much-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E4A1AA0529A5B91E00FAC7CF /* How Much.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How Much.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A1AA0829A5B91E00FAC7CF /* How_MuchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = How_MuchApp.swift; sourceTree = "<group>"; };
 		E4A1AA0A29A5B91E00FAC7CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		E4A1AA0729A5B91E00FAC7CF /* How Much */ = {
 			isa = PBXGroup;
 			children = (
+				E463E5F029A8A0CE003F30C8 /* How-Much-Info.plist */,
 				E4A1AA0829A5B91E00FAC7CF /* How_MuchApp.swift */,
 				E4A1AA0A29A5B91E00FAC7CF /* ContentView.swift */,
 				E4A1AA0C29A5B91F00FAC7CF /* Assets.xcassets */,
@@ -270,7 +272,7 @@
 				DEVELOPMENT_TEAM = 4P4GQMB6S7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "How-Much-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +301,7 @@
 				DEVELOPMENT_TEAM = 4P4GQMB6S7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "How-Much-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
