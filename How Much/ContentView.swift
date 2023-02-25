@@ -13,6 +13,18 @@ struct ContentView: View {
     @State private var tipPct = 0
     @State private var numPeople = 1
     @State private var total = "0"
+    @State private var calculate = false
+    
+    var canAddDecimal: Bool {
+        total.filter({ $0 == "." }).count == 0 ? true : false
+    }
+    
+    var canAddDigit: Bool {
+        guard let decIndex = total.firstIndex(of: ".") else { return true }
+            let index = total.distance(from: total.startIndex, to: decIndex)
+            return (total.count - index - 1) < 2
+    }
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -20,6 +32,8 @@ struct ContentView: View {
                     .font(.system(size: 70))
                     .frame(width: 260, alignment: .trailing)
                     .padding(.vertical, 1)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
                 HStack {
                     ForEach(1...3, id: \.self) { number in
                         numberButton(number: "\(number)")
@@ -39,6 +53,11 @@ struct ContentView: View {
                     numberButton(number: "0")
                     numberButton(number: ".")
                     Button {
+                        if total.count == 1 {
+                            total = "0"
+                        } else {
+                            total.removeLast()
+                        }
                         
                     } label: {
                         Image(systemName: "delete.backward.fill")
@@ -70,21 +89,35 @@ struct ContentView: View {
                 }
                 HStack {
                     Button("Calculate") {
-                        
+                        calculate = true
                     }
                     Button("Clear") {
-                        
+                        total = "0"
                     }
                 }
+                .disabled(Double(total) == 0)
                 .buttonStyle(.borderedProminent)
                 Spacer()
             }
             .navigationTitle("Portion Calculator")
         }
     }
+    
+    func addDigit(_ number: String) {
+        if canAddDigit {
+            if number == "." {
+                if canAddDecimal {
+                    total += number
+                }
+            } else {
+                total = total == "0" ? number : total + number
+            }
+        }
+    }
+    
     func numberButton(number: String) -> some View {
         Button {
-            
+            addDigit(number)
         } label: {
             Text(number)
                 .font(.largeTitle)
