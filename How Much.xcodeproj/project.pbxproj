@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E463E5F429A9BB78003F30C8 /* TotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463E5F329A9BB78003F30C8 /* TotalsView.swift */; };
 		E4A1AA0929A5B91E00FAC7CF /* How_MuchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1AA0829A5B91E00FAC7CF /* How_MuchApp.swift */; };
 		E4A1AA0B29A5B91E00FAC7CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1AA0A29A5B91E00FAC7CF /* ContentView.swift */; };
 		E4A1AA0D29A5B91F00FAC7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A1AA0C29A5B91F00FAC7CF /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		E463E5F029A8A0CE003F30C8 /* How-Much-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "How-Much-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E463E5F329A9BB78003F30C8 /* TotalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalsView.swift; sourceTree = "<group>"; };
 		E4A1AA0529A5B91E00FAC7CF /* How Much.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How Much.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A1AA0829A5B91E00FAC7CF /* How_MuchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = How_MuchApp.swift; sourceTree = "<group>"; };
 		E4A1AA0A29A5B91E00FAC7CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				E463E5F029A8A0CE003F30C8 /* How-Much-Info.plist */,
 				E4A1AA0829A5B91E00FAC7CF /* How_MuchApp.swift */,
 				E4A1AA0A29A5B91E00FAC7CF /* ContentView.swift */,
+				E463E5F329A9BB78003F30C8 /* TotalsView.swift */,
 				E4A1AA0C29A5B91F00FAC7CF /* Assets.xcassets */,
 				E4A1AA0E29A5B91F00FAC7CF /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E463E5F429A9BB78003F30C8 /* TotalsView.swift in Sources */,
 				E4A1AA0B29A5B91E00FAC7CF /* ContentView.swift in Sources */,
 				E4A1AA0929A5B91E00FAC7CF /* How_MuchApp.swift in Sources */,
 			);
