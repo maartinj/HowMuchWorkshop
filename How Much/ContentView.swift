@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// Film Part 2 2:10: https://www.youtube.com/watch?v=vuTnHh6sjkw&ab_channel=StewartLynch
+// Playlista SwiftUI Workshop: https://www.youtube.com/watch?v=C8FWpccVYro&list=PLBn01m5Vbs4CTP6FpTWG0ZPDTyj4Fpt-3&ab_channel=StewartLynch
 
 struct ContentView: View {
     @AppStorage("tipPct") var tipPct = 0
@@ -108,8 +108,6 @@ struct ContentView: View {
                     TotalsView(total: Double(total) ?? 0, tipPct: tipPct, numPeople: numPeople)
                         .presentationDetents([.medium])
                 }
-                
-                // Film 11:30: https://youtu.be/MzYTQToxWvs?t=693
                 
                 Button("Clear") {
                     total = "0"
